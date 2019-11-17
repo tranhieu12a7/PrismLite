@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:App1.Views"
+       mc:Ignorable="d"
+             x:Class="App1.AppShell">
+
+    <FlyoutItem Title="Home" FlyoutIcon="icons8_home_30.png" FlyoutDisplayOptions="AsSingleItem">
+
+        <Tab Title="Dashboard" Icon="icons8_home_30.png">
+            <ShellContent>
+                <views:Page1 BindingContext="{Binding Page1ViewModel}"/>
+            </ShellContent>
+        </Tab>
+        <Tab Title="Page1" Icon="icons8_user_shield_30.png">
+            <ShellContent>
+                <views:Page2 />
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+</Shell>
